@@ -14,6 +14,7 @@ module.exports = {
         navBgH: "#EEEBFF",
         homeName: "#4338CA",
         homeText: "#1F2937",
+        hrColor: "#BAB2E7",
       },
       fontFamily: {
         inter: ["Inter"],
