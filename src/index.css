@@ -27,4 +27,14 @@
   .t-header {
     @apply font-semibold;
   }
+
+  .btn-skills {
+    @apply border-solid border-2 rounded-md text-navHire font-medium px-4 py-2 border-navHire cursor-default;
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-skills:hover {
+    @apply bg-navHire text-white;
+  }
 }
