@@ -1,40 +1,45 @@
 import React from "react";
 
-const Profile = () => {
+const Profile = (props) => {
+  const { data } = props;
   return (
     <section>
-      <div className="bg-primary dark:bg-black pb-32">
+      <div className="bg-primary dark:bg-black pb-12">
         <div className="w-2/3 mx-auto">
-          <h2 className="font-semibold text-5xl mb-10">Profile</h2>
+          <h2 className="font-semibold text-5xl mb-10">
+            {data.profile.profile}
+          </h2>
           <div className="flex justify-between mb-12">
             <div>
               <div className="text-homeName font-medium text-3xl mb-5">
-                Profile
+                {data.profile.profile}
               </div>
               <div>
                 <table class="table-auto text-left">
                   <tr>
-                    <th class="t-element t-header">Doğum Tarihi</th>
+                    <th class="t-element t-header">{data.profile.dob}</th>
                     <td class="t-element">1995</td>
                   </tr>
                   <tr>
-                    <th class="t-elemen t-header">İkamet Şehri</th>
-                    <td class="t-element">Ankara</td>
+                    <th class="t-elemen t-header">{data.profile.location}</th>
+                    <td class="t-element">{data.profile.locationAns}</td>
                   </tr>
                   <tr>
-                    <th class="t-element t-header">Eğitim Durumu</th>
-                    <td class="t-element">YTÜ İnşaat Mühendisi, 2018</td>
+                    <th class="t-element t-header">{data.profile.education}</th>
+                    <td class="t-element">{data.profile.educationAns}</td>
                   </tr>
                   <tr>
-                    <th class="t-element t-header">Tercih Ettiği Rol</th>
-                    <td class="t-element">Full-Stack Developer</td>
+                    <th class="t-element t-header">
+                      {data.profile.preferredRole}
+                    </th>
+                    <td class="t-element">{data.profile.preferredRoleAns}</td>
                   </tr>
                 </table>
               </div>
             </div>
             <div>
               <div className="text-homeName font-medium text-3xl mb-5">
-                About Me
+                {data.profile.aboutMe}
               </div>
               <div>
                 <p>

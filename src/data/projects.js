@@ -7,7 +7,7 @@ export const projects = {
     image: project1,
     name: "p1",
     text: {
-      en: "project",
+      eng: "project",
       tr: "proje",
     },
     tools: ["React", "Redux", "JavaScript"],
@@ -17,7 +17,7 @@ export const projects = {
     image: project2,
     name: "p2",
     text: {
-      en: "project",
+      eng: "project",
       tr: "proje",
     },
     tools: ["Vue", "JavaScript", "CSS"],
@@ -27,7 +27,7 @@ export const projects = {
     image: project3,
     name: "p3",
     text: {
-      en: "project",
+      eng: "project",
       tr: "proje",
     },
     tools: ["Angular", "TypeScript", "HTML"],

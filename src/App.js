@@ -26,17 +26,20 @@ function App() {
   return (
     <div className={"App " + (theme ? "dark" : "")}>
       <Header
+        theme={theme}
+        language={language}
+        data={data}
         handleThemeChange={handleThemeChange}
         handleLanguageChange={handleLanguageChange}
       />
       <main>
-        <Home />
-        <Skills />
-        <Profile />
-        <Projects />
-        <Contact />
+        <Home data={data} />
+        <Skills data={data} />
+        <Profile data={data} />
+        <Projects language={language} data={data} />
+        <Contact data={data} />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
