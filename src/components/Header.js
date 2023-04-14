@@ -49,13 +49,18 @@ const Header = (props) => {
             </Link>
           </div>
           <div className="flex items-center gap-20">
-            <Link to="#skills">{data.nav.skills}</Link>
+            {/* <Link to="#skills">{data.nav.skills}</Link> */}
+            <a href="#skills">{data.nav.skills}</a>
             {/* <Link to="#profile">{data.nav.profile}</Link> */}
-            <Link to="#projects">{data.nav.projects}</Link>
-            <Link to="#contact">
-              {/* <button className="border-solid border-2 border-indigo-800 px-8 py-3 text-navHire"> */}
-              <button className="btn px-1">{data.nav.hireMe}</button>
-            </Link>
+            {/* <Link to="#projects">{data.nav.projects}</Link> */}
+            <a href="#projects">{data.nav.projects}</a>
+
+            {/* <Link to="#contact"> */}
+            {/* <button className="border-solid border-2 border-indigo-800 px-8 py-3 text-navHire"> */}
+            <button className="btn px-1">
+              <a href="#contact">{data.nav.hireMe}</a>
+            </button>
+            {/* </Link> */}
           </div>
         </nav>
       </div>

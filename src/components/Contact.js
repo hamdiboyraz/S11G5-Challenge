@@ -4,7 +4,7 @@ import hand from "../assets/hand.svg";
 const Contact = (props) => {
   const { data } = props;
   return (
-    <section>
+    <section id="contact">
       <div className="bg-contactPrimary dark:bg-contactPrimaryDark pt-20">
         <div className="w-2/3 mx-auto">
           <div className="text-4xl font-semibold mb-16">

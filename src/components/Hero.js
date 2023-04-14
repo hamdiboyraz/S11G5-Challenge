@@ -25,7 +25,9 @@ const Hero = (props) => {
               </p>
 
               <div className="flex flex-col items-center md:flex-row gap-3">
-                <button className="btn-fill px-1">{data.home.hireMe}</button>
+                <button className="btn-fill px-1">
+                  <a href="#contact">{data.nav.hireMe}</a>
+                </button>
                 <a href="https://www.github.com/hamdiboyraz" target="_blank">
                   <button className="btn px-3 flex gap-3 ">
                     <img src={github} alt="github" />

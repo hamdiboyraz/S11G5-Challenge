@@ -4,7 +4,7 @@ import { projects } from "../data/projects";
 const Projects = (props) => {
   const { language, data } = props;
   return (
-    <section>
+    <section id="projects">
       <div className="bg-primary dark:bg-black pb-36">
         <div className="w-2/3 mx-auto">
           <h2 className="font-semibold text-5xl mb-9">
