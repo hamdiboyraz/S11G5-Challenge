@@ -7,29 +7,32 @@ const Hero = (props) => {
   const { data } = props;
   return (
     <section>
-      <div className="bg-primary dark:bg-black pb-32">
+      <div className="bg-primary dark:bg-primaryDark pb-32">
         <div className="w-2/3 mx-auto">
           <div className="flex justify-start items-center gap-2  mb-10">
-            <hr className="w-24 h-px bg-indigo-800 border-none" />
-            <span className="text-homeName font-medium"> Hamdi </span>
+            <hr className="w-24 h-px bg-indigo-800 border-none dark:bg-hrColorDark" />
+            <span className="text-homeName font-medium dark:text-homeNameDark">
+              {" "}
+              Hamdi{" "}
+            </span>
           </div>
           <div className="flex flex-col-reverse md:flex-row justify-start gap-16">
             <div className="md:w-1/2">
-              <div className="text-homeText font-bold text-7xl mb-10">
+              <div className="text-homeText font-bold text-7xl mb-10 dark:text-homeTextDark">
                 <p>{data.home.title1}</p>
                 <p>{data.home.title2}</p>
               </div>
 
-              <p className="text-lg w-[560px] text-navPrimary mb-10">
+              <p className="text-lg w-[560px] text-navPrimary mb-10 dark:text-white">
                 {data.home.description}
               </p>
 
               <div className="flex flex-col items-center md:flex-row gap-3">
-                <button className="btn-fill px-1">
+                <button className="btn-fill px-1 ">
                   <a href="#contact">{data.nav.hireMe}</a>
                 </button>
                 <a href="https://www.github.com/hamdiboyraz" target="_blank">
-                  <button className="btn px-3 flex gap-3 ">
+                  <button className="btn px-3 flex gap-3">
                     <img src={github} alt="github" />
                     Github
                   </button>

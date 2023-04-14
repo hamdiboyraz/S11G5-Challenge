@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply w-[131px] h-[52px] border-solid border-2 rounded-md border-indigo-800 px-8 py-3 text-navHire text-lg font-medium;
+    @apply w-[131px] h-[52px] border-solid border-2 rounded-md border-indigo-800 px-8 py-3 text-navHire text-lg font-medium dark:text-[#e1e1ff] dark:border-[#e1e1ff];
 
     transition: all 0.3s ease-in-out;
   }
@@ -12,7 +12,7 @@
     @apply bg-indigo-400 text-white;
   }
   .btn-fill {
-    @apply w-[131px] h-[52px] border-solid border-2 rounded-md border-indigo-800 bg-indigo-800 text-white px-8 py-3 text-lg font-medium;
+    @apply w-[131px] h-[52px] border-solid border-2 rounded-md border-indigo-800 bg-indigo-800 text-white px-8 py-3 text-lg font-medium dark:text-black dark:bg-[#E1E1FF];
     transition: all 0.3s ease-in-out;
   }
 
@@ -21,15 +21,15 @@
   }
 
   .t-element {
-    @apply py-2 pr-6 font-normal;
+    @apply py-2 pr-6 font-normal dark:text-white;
   }
 
   .t-header {
-    @apply font-semibold;
+    @apply font-semibold dark:text-white;
   }
 
   .btn-skills {
-    @apply border-solid border-2 rounded-md text-navHire font-medium px-4 py-2 border-navHire cursor-default;
+    @apply border-solid border-2 rounded-md text-navHire font-medium px-4 py-2 border-navHire cursor-default dark:text-[#8F88FF] dark:border-[#8F88FF];
 
     transition: all 0.3s ease-in-out;
   }

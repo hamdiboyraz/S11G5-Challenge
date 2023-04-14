@@ -5,7 +5,7 @@ const Header = (props) => {
   const { theme, language, data, handleThemeChange, handleLanguageChange } =
     props;
   return (
-    <div className="bg-primary dark:bg-black pt-8 pb-32">
+    <div className="bg-primary dark:bg-primaryDark pt-8 pb-32">
       <div className="w-2/3 mx-auto">
         <div className="flex justify-end text-sm font-bold tracking-wider text-togglePrimary mb-12">
           <label className="relative inline-flex items-center cursor-pointer">
@@ -43,7 +43,7 @@ const Header = (props) => {
         <nav className="flex justify-between items-center text-navPrimary font-medium">
           <div>
             <Link to="/">
-              <button className="rounded-full bg-navBgH text-navH font-semibold text-2xl px-4 py-2 focus:outline-none transform rotate-45">
+              <button className="rounded-full bg-navBgH text-navH  font-semibold text-2xl px-4 py-2 focus:outline-none transform rotate-45 dark:text-navHDark dark:bg-navBgHDark">
                 H
               </button>
             </Link>
@@ -57,7 +57,7 @@ const Header = (props) => {
 
             {/* <Link to="#contact"> */}
             {/* <button className="border-solid border-2 border-indigo-800 px-8 py-3 text-navHire"> */}
-            <button className="btn px-1">
+            <button className="btn px-1 dark:bg-white dark:text-[#3730A3]">
               <a href="#contact">{data.nav.hireMe}</a>
             </button>
             {/* </Link> */}

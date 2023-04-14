@@ -7,19 +7,21 @@ const Contact = (props) => {
     <section id="contact">
       <div className="bg-contactPrimary dark:bg-contactPrimaryDark pt-20">
         <div className="w-2/3 mx-auto">
-          <div className="text-4xl font-semibold mb-16">
+          <div className="text-4xl font-semibold mb-16 dark:text-[#AEBCCF]">
             <p>{data.contact.title1}</p>
             <p>{data.contact.title2}</p>
           </div>
           <div className="flex flex-col md:flex-row md:justify-between  pb-36">
             <div className="flex gap-2 pb-16">
               <img src={hand} alt="" />
-              <div className="text-contactRed text-xl underline">
+              <div className="text-contactRed text-xl underline dark:text-[#BAB2E7]">
                 www.github.com/hamdiboyraz
               </div>
             </div>
             <div className="flex justify-between gap-5 font-medium text-lg">
-              <div className="text-contactT1">{data.contact.personalBlog}</div>
+              <div className="text-contactT1 dark:text-[#E1E1FF]">
+                {data.contact.personalBlog}
+              </div>
               <a
                 href="https://www.github.com/hamdiboyraz"
                 target="_blank"

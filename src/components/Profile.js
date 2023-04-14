@@ -4,14 +4,14 @@ const Profile = (props) => {
   const { data } = props;
   return (
     <section>
-      <div className="bg-primary dark:bg-black pb-12">
+      <div className="bg-primary dark:bg-primaryDark pb-12">
         <div className="w-2/3 mx-auto">
-          <h2 className="font-semibold text-5xl mb-10">
+          <h2 className="font-semibold text-5xl mb-10 dark:text-[#AEBCCF]">
             {data.profile.profile}
           </h2>
           <div className="flex justify-between mb-12">
             <div>
-              <div className="text-homeName font-medium text-3xl mb-5">
+              <div className="text-homeName font-medium text-3xl mb-5 dark:text-[#B7AAFF]">
                 {data.profile.profile}
               </div>
               <div>
@@ -44,11 +44,11 @@ const Profile = (props) => {
               </div>
             </div>
             <div>
-              <div className="text-homeName font-medium text-3xl mb-5">
+              <div className="text-homeName font-medium text-3xl mb-5 dark:text-[#B7AAFF]">
                 {data.profile.aboutMe}
               </div>
-              <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <p class="text-sm md:text-base lg:text-lg">
+              <div class="container mx-auto pr-4 sm:pr-6 lg:pr-8">
+                <p class="text-sm md:text-base lg:text-lg dark:text-white">
                   {data.profile.description}
                 </p>
               </div>
