@@ -3,7 +3,7 @@ import github from "../assets/github.png";
 import linkedin from "../assets/linkedIn.png";
 import homepage from "../assets/homepage.jpg";
 
-const Home = (props) => {
+const Hero = (props) => {
   const { data } = props;
   return (
     <section>
@@ -13,8 +13,8 @@ const Home = (props) => {
             <hr className="w-24 h-px bg-indigo-800 border-none" />
             <span className="text-homeName font-medium"> Hamdi </span>
           </div>
-          <div className="flex gap-16">
-            <div>
+          <div className="flex flex-col-reverse md:flex-row justify-start gap-16">
+            <div className="md:w-1/2">
               <div className="text-homeText font-bold text-7xl mb-10">
                 <p>{data.home.title1}</p>
                 <p>{data.home.title2}</p>
@@ -24,7 +24,7 @@ const Home = (props) => {
                 {data.home.description}
               </p>
 
-              <div className="flex gap-3">
+              <div className="flex flex-col items-center md:flex-row gap-3">
                 <button className="btn-fill px-1">{data.home.hireMe}</button>
                 <a href="https://www.github.com/hamdiboyraz" target="_blank">
                   <button className="btn px-3 flex gap-3 ">
@@ -32,7 +32,7 @@ const Home = (props) => {
                     Github
                   </button>
                 </a>
-                <a href="">
+                <a href="#">
                   <button className="btn px-3 flex gap-3 ">
                     <img src={linkedin} alt="linkedin" />
                     Linkedin
@@ -54,4 +54,4 @@ const Home = (props) => {
   );
 };
 
-export default Home;
+export default Hero;

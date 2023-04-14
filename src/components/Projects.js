@@ -10,13 +10,17 @@ const Projects = (props) => {
           <h2 className="font-semibold text-5xl mb-9">
             {data.projects.projects}
           </h2>
-          <div className="flex justify-between gap-24 mb-12">
+          <div className="md:flex md:justify-between md:gap-24 md:mb-12">
             {Object.entries(projects).map(
-              ([key, { image, text, tools, links }]) => (
+              ([key, { image, name, text, tools, links }]) => (
                 <div key={key}>
-                  <img src={image} alt={key} className="mb-3" />
+                  <img
+                    src={image}
+                    alt={key}
+                    className="w-[250px] h-[250px] mb-3"
+                  />
                   <p className="text-homeName font-medium text-2xl mb-3">
-                    {key}
+                    {name}
                   </p>
                   <p className="text-left mb-3">
                     {text[language ? "tr" : "eng"]}

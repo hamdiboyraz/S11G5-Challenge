@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#f5f5f5",
+        primary: "#fff",
         togglePrimary: "#777777",
         toggleSecondary: "#4731D3",
         navPrimary: "#6B7280",

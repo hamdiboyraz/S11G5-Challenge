@@ -11,7 +11,7 @@ const Header = (props) => {
           <label className="relative inline-flex items-center cursor-pointer">
             <input
               type="checkbox"
-              value=""
+              checked={theme}
               className="sr-only peer"
               onClick={handleThemeChange}
             />
@@ -48,9 +48,9 @@ const Header = (props) => {
               </button>
             </Link>
           </div>
-          <div className="flex items-center gap-10">
+          <div className="flex items-center gap-20">
             <Link to="#skills">{data.nav.skills}</Link>
-            <Link to="#profile">{data.nav.profile}</Link>
+            {/* <Link to="#profile">{data.nav.profile}</Link> */}
             <Link to="#projects">{data.nav.projects}</Link>
             <Link to="#contact">
               {/* <button className="border-solid border-2 border-indigo-800 px-8 py-3 text-navHire"> */}

@@ -11,8 +11,8 @@ const Contact = (props) => {
             <p>{data.contact.title1}</p>
             <p>{data.contact.title2}</p>
           </div>
-          <div className="flex justify-between">
-            <div className="flex gap-2  pb-36">
+          <div className="flex flex-col md:flex-row md:justify-between  pb-36">
+            <div className="flex gap-2 pb-16">
               <img src={hand} alt="" />
               <div className="text-contactRed text-xl underline">
                 www.github.com/hamdiboyraz
@@ -20,7 +20,13 @@ const Contact = (props) => {
             </div>
             <div className="flex justify-between gap-5 font-medium text-lg">
               <div className="text-contactT1">{data.contact.personalBlog}</div>
-              <div className="text-contactT2">Github</div>
+              <a
+                href="https://www.github.com/hamdiboyraz"
+                target="_blank"
+                className="text-contactT2"
+              >
+                Github
+              </a>
               <div className="text-contactT3">Linkedin</div>
             </div>
           </div>

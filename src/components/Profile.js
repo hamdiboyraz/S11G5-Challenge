@@ -15,24 +15,30 @@ const Profile = (props) => {
                 {data.profile.profile}
               </div>
               <div>
-                <table class="table-auto text-left">
+                <table className="table-auto text-left">
                   <tr>
-                    <th class="t-element t-header">{data.profile.dob}</th>
-                    <td class="t-element">1995</td>
+                    <th className="t-element t-header">{data.profile.dob}</th>
+                    <td className="t-element">1995</td>
                   </tr>
                   <tr>
-                    <th class="t-elemen t-header">{data.profile.location}</th>
-                    <td class="t-element">{data.profile.locationAns}</td>
+                    <th className="t-elemen t-header">
+                      {data.profile.location}
+                    </th>
+                    <td className="t-element">{data.profile.locationAns}</td>
                   </tr>
                   <tr>
-                    <th class="t-element t-header">{data.profile.education}</th>
-                    <td class="t-element">{data.profile.educationAns}</td>
+                    <th className="t-element t-header">
+                      {data.profile.education}
+                    </th>
+                    <td className="t-element">{data.profile.educationAns}</td>
                   </tr>
                   <tr>
-                    <th class="t-element t-header">
+                    <th className="t-element t-header">
                       {data.profile.preferredRole}
                     </th>
-                    <td class="t-element">{data.profile.preferredRoleAns}</td>
+                    <td className="t-element">
+                      {data.profile.preferredRoleAns}
+                    </td>
                   </tr>
                 </table>
               </div>
@@ -41,18 +47,9 @@ const Profile = (props) => {
               <div className="text-homeName font-medium text-3xl mb-5">
                 {data.profile.aboutMe}
               </div>
-              <div>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Recusandae porro totam praesentium corrupti expedita a iure
-                  officia perferendis, mollitia similique quae fuga libero
-                  doloribus soluta architecto quaerat ut aspernatur fugit?
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt in, rerum, soluta deserunt quod vero suscipit,
-                  provident voluptas explicabo totam ipsa nemo? Ullam, iste
-                  corporis. Consequatur molestias sequi illo officia.
+              <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <p class="text-sm md:text-base lg:text-lg">
+                  {data.profile.description}
                 </p>
               </div>
             </div>

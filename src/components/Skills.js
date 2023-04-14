@@ -7,16 +7,21 @@ const Skills = (props) => {
       <div className="bg-primary dark:bg-black pb-12">
         <div className="w-2/3 mx-auto">
           <h2 className="font-semibold text-5xl mb-14">{data.skills}</h2>
-          <div className="flex justify-between text-center mb-12">
+          <div className="flex justify-between md:flex-wrap text-left mb-12">
             {Object.entries(skills).map(([key, value]) => (
-              <div>
-                <img src={value} alt={key} key={key} className="mb-3" />
-                <span className="text-togglePrimary font-medium text-2xl">
-                  {key}
-                </span>
+              <div className="w-full md:w-1/2 lg:w-1/3 mb-8 pr-2" key={key}>
+                <div className="flex items-center gap-1 text-homeName font-medium text-2xl">
+                  <span className="text-4xl md:text-xl">{value}</span>
+                  <span className="hidden md:inline">{key}</span>
+                </div>
+                <p className="hidden md:block mt-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem, eaque.
+                </p>
               </div>
             ))}
           </div>
+
           <hr className="w-full h-px bg-hrColor border-none" />
         </div>
       </div>
